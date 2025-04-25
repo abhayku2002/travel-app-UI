@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import TravelCard from '@/components/TravelCard';
 import TopSights from '@/components/TopSights';
@@ -11,7 +10,7 @@ const eiffelTower = {
   location: "Paris",
   country: "France",
   description: "Paris' monument-lined boulevards, museums, classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups. The cloud-piercing, wrought-iron Eiffel Tower, built for the 1889 World's Fair, is a cultural icon and one of the world's most recognizable structures.",
-  mainImage: `https://images.unsplash.com/photo-${process.env.NODE_ENV === 'production' ? '1483038712412-4245e9b90334' : '1483038712412-4245e9b90334'}`,
+  mainImage: `https://images.unsplash.com/photo-1487958449943-2429e8be8625`, // Specific Eiffel Tower image
   images: [
     {
       id: 1,
