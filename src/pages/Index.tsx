@@ -11,7 +11,7 @@ const eiffelTower = {
   location: "Paris",
   country: "France",
   description: "Paris' monument-lined boulevards, museums, classical bistros and boutiques are enhanced by a new wave of multimedia galleries, creative wine bars, design shops and tech start-ups. The cloud-piercing, wrought-iron Eiffel Tower, built for the 1889 World's Fair, is a cultural icon and one of the world's most recognizable structures.",
-  mainImage: "/lovable-uploads/34850b85-7332-464a-8ad6-1fe83b333a89.png",
+  mainImage: `https://images.unsplash.com/photo-${process.env.NODE_ENV === 'production' ? '1483038712412-4245e9b90334' : '1483038712412-4245e9b90334'}`,
   images: [
     {
       id: 1,
