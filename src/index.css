@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -98,4 +92,22 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Travel app specific styles */
+.hero-gradient {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.carousel-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-item.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.carousel-item:not(.active) {
+  opacity: 0.7;
 }
